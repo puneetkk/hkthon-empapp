@@ -1,0 +1,265 @@
+/* Custom Styles */
+@import url("dist/css/fonts.css");
+
+body { 
+  padding: 9px 0;
+}
+
+  body:before,
+  body:after {
+    background: #a08d8d;
+    content: '';
+    height: 9px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+  }
+
+    body:before { top: 0; }
+
+    body:after { display: none; }
+
+.primary-color { color: #ff6f69; }
+
+.logo {
+  display: inline-block;
+  margin: 32px;
+}  
+
+  .logo img { 
+    max-width: 226px;
+    width: 100%; 
+  }  
+
+header .user {
+  color: #29abe2;
+  margin-top: 24px;
+  font-size: 24px;
+}
+header .user span {
+  display: inline-block;
+  border-radius: 50%;
+  background: #ffcfab;
+  padding: 3px;
+  height: 40px;
+  text-align: center;
+  width: 40px;
+  margin-right: 20px;
+} 
+
+
+header .user i { 
+  color: #fff;
+  font-size: 20px;
+}
+header .exit {
+  float: right;
+  margin-top: 30px;
+}
+
+header .exit i { 
+  color: #ff6f69;
+  font-size: 35px;
+}
+
+nav {
+  background: #ffebc7;
+  color: #af5858;
+  padding: 12px 0;
+}
+
+  .breadcrumb {
+    background: transparent;
+    color: inherit;
+    line-height: 100%;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .breadcrumb > li + li:before {
+      color: inherit;
+      content: ">\00a0";
+      padding: 0 5px;
+  }
+
+  .breadcrumb > li a { color: #366096; }
+
+  .breadcrumb > .active { color: inherit; }
+
+h1 {
+  margin: 30px 20px 26px;
+  font-size: 22px;
+  text-transform:uppercase;
+  color: #FF6F69;
+}
+
+/*Retirement plan screen css starts here*/
+	 .slider.slider-horizontal{width:80%;} 
+	.slider.slider-horizontal .slider-track{height:12px;}
+	.slider.slider-horizontal .slider-tick-label-container .slider-tick-label{width30%;}
+	.slider.slider-horizontal .slider-tick{width:3px;margin-left: 0px;/*margin-top:15px;*/ }
+	.slider.slider-horizontal .slider-handle{width: 31px; height:32px;background:url(dist/img/slider-tip.png) no-repeat;}
+	.tooltip-inner{background-color:#DAA520;}
+	
+	.tooltip.top .tooltip-arrow {
+			border-top-color: #daa520;
+			border-left: 3px solid #daa520;
+			bottom: -2px;
+			padding-bottom: 6px;
+			
+			margin-left: -2px;
+
+	}
+	.slider-track-high{background-color: #DCDCDC;}
+	.slider-selection.tick-slider-selection{background-color:#A9A9A9;background-image: linear-gradient(to bottom, #a9a9a9 0%, #696969 100%); height:12px;}
+	.slider-tick.in-selection{background-image: linear-gradient(to bottom, #a9a9a9 0%, #696969 100%);}
+	.tooltip{padding: 6px 0px;}
+	.slider-tick.round {
+		border-radius: 50%;
+		background-color: #a9a9a9;
+	}
+	.slider-example,.input-container{padding:15px; margin-top:10px;border-top: 1px solid #c0c0c0;}
+	.slider-example label,.input-container label{display:block; color:#a9a9a9;}
+	.slider-example .input-container{margin-top:15px;}
+	input{
+		border: 1px solid #a9a9a9;
+		border-radius: 5px;
+		padding: 3px;
+		
+	}
+	.input-container{margin-top: 1rem;font-weight:bold;}
+	
+	.salary-input{width:100px;color:#a9a9a9;}
+	
+	
+	.button-container{margin:0 auto;}
+	.button {
+		background-color: #c0c0c0;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+}
+
+	button.selected{background-color: #555555;}
+	
+	 /*Retirement plan screen css ends here*/
+
+.page-wrap { padding-bottom: 80px; }
+
+.dashboard-widgets {
+}
+
+  .dashboard-widgets section { 
+    color: #af5858;
+    background: #f2f2f2;
+    margin-top: 20px; 
+    border: 1px solid #a08d8d;
+    min-height: 290px;
+    font-size: 18px;
+  }
+
+    .dashboard-widgets section h3 {
+      background: #a08d8d;
+      color: #fff;
+      margin: 0;
+      height: 40px;
+      line-height: 40px;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding-left: 20px;
+    }
+
+    .dashboard-widgets section .amount { color: #FF6F69; }
+
+      .dashboard-widgets .pension-pots-left .widget-label { color: #914a4a; } 
+
+    .dashboard-widgets .pension-pots-right {
+      border-left: 1px solid #fc8686;
+      padding-left: 12px;
+    }
+      .dashboard-widgets .pension-pots-right .amount { line-height: 100%; } 
+
+      .dashboard-widgets .pension-pots-right .widget-label { text-transform: uppercase; } 
+
+      .dashboard-widgets .current-plan .amount,
+      .dashboard-widgets .current-plan .widget-label { line-height: 100%; } 
+
+      .dashboard-widgets .current-plan .btn { margin-top: 42px; } 
+
+  .dashboard-widgets .action-row { 
+    border-bottom: 1px solid #d3d3d3;
+    box-shadow: 0 1px 0 #ebebeb;
+    font-size: 16px;
+    color: #000;
+    min-height: 70px;
+    padding: 15px 0;
+
+  } 
+
+    .dashboard-widgets .action-row:last-child {
+      border-bottom: 0;
+      box-shadow: none;
+    }
+
+    .dashboard-widgets .action- p,
+    .dashboard-widgets .timeline-row p { 
+      color: #4d4d4d;
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    .dashboard-widgets .action-row span {  color: #f15a24; }
+
+    .dashboard-widgets .action-row .action-icon {  
+      width: 60px;
+      height: 80px;
+      float: left;
+      color: #f15a24;
+    }
+    .dashboard-widgets .action-row .action-icon i {  
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg); 
+      transform: rotate(-45deg);
+      margin-left: 8px;
+      font-size: 25px;
+    }
+
+    .dashboard-widgets .timeline-row { color: #914a4a; }
+    
+      .dashboard-widgets .timeline-row .timeline-reviews {
+        margin: 13px 20px;
+        border-bottom: 1px solid #d3d3d3;
+        box-shadow: 0 1px 0 #ebebeb;
+        padding-bottom: 15px;
+      }
+    
+        .dashboard-widgets .timeline-row:last-child  .timeline-reviews{  
+          border-bottom: 0;
+          box-shadow: none;
+          padding-bottom: 0;
+          margin-bottom: 0
+        }
+      
+      .dashboard-widgets .timeline-reviews .rating,
+      .dashboard-widgets .timeline-reviews .likes {  
+        display: inline-block;
+        color: #ff6f69; 
+        padding-left: 0
+      }
+      .dashboard-widgets .timeline-reviews .rating { padding-right: 25px; }
+
+      .dashboard-widgets .timeline-reviews .rating li { 
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      .dashboard-widgets .timeline-reviews .rating .fa-star-o { font-size: 25px; }
+
+
