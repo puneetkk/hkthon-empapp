@@ -59,57 +59,93 @@
 	    </div>
     </div>
    <h1>My Retirement Plan</h1>
-
-    <div class="row page-wrap">
+<div class="container">
+    <div class="row page-wrap m-0-auto">
 		<div class="slider-widgets">
-			<div class="col-sm-12 p-r-10">
+			<div class="col-sm-8 p-r-10 ">
 				<section>
-					<div class='slider-example'>
+					<div class='slider-container'>
 							<label>CURRENT AGE:</label>
 							<input id="slider1" type="text" data-slider-ticks="[20, 25, 30, 35, 40,45,50,55,60,65]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["20", "25", "30", "35", "40","45", "50", "55", "60","65"]'>
 					</div>
 				</section>
 				
 			</div>
-			<div class="col-sm-12 p-l-10 ">
+			<div class="col-sm-8 p-l-10 ">
 				<section>
-					<div class="input-container">
-						<label> MONTHLY SALARY</label>
+					<div class="slider-container input-wrapper">
+						<label class="p-b-0"> MONTHLY SALARY</label>
 						<span>$ <input type="number" class ="salary-input" value=""/></span>
 					</div>
 				</section>
 			</div>
-			<div class="col-sm-12 p-l-10 ">
+			<div class="col-sm-8 p-l-10 ">
 				<section>
-					<div class='slider-example'>
+					<div class='slider-container'>
 						<label>PENSION AGE</label>
 						<input id="slider2" type="text" data-slider-ticks="[20, 25, 30, 35, 40,45,50,55,60,65]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["20", "25", "30", "35", "40","45", "50", "55", "60","65"]'>
 					
 					</div>
 				</section>
 			</div>	
-			<div class="col-sm-12 p-l-10 ">
+			<div class="col-sm-8 p-l-10 ">
 				<section>
-					<div class='slider-example'>
+					<div class='slider-container'>
 						<label>TARGET PENSION POT - MONTHLY</label>
 						<input id="slider3" type="text" data-slider-ticks="[1000, 2000, 3000, 4000,5000,6000]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["1000", "2000", "3000", "4000", "5000","6000"]'>
 					
 					</div>
 				</section>
 			</div>	
-			<div class="col-sm-12 p-l-10 ">
+			<div class="col-sm-8 p-l-10 ">
 				<section>
-					<div class="input-container text-center">
+					<div class="text-center slider-container">
 						<div class="button-container">
-								<button class="button medium selected">CALCULATE</button>
-								<button class="button">RESET</button>
+								<button class="button medium selected">Calculate</button>
+								<button class="button medium">Reset</button>
 						</div>
 					</div>
 				</section>
-			</div>			
+			</div>
+				
 		</div>
+		
+		    <div class="dashboard-widgets">
+       		
+			<div class="col-sm-8 p-l-10 ">
+				<section class="bg-none">
+				<div class="p-30 "> 
+                	<div class="row p-t-15">
+	                	<div class="col-sm-8 pension-pots-left" >
+	                		<div class="widget-label font-20 uppercase-trasfom">My Career & Retirement Plan</div>
+	                		<div class="font-14">Last Updated :12 April 2017</div>
+	                	</div>
+	                	<div class="col-sm-4 pension-pots-right">
+	                		<div class="widget-label font-20 p-b-5"></div>
+	                		<div class="amount font-28"><span class="extrabold">$2,561*</span></div> 
+	                		<div>
+	                			<strong>per month</strong> Estimated monthly income including STate Pension
+	                		</div>
+	                	</div>
+	                </div>
+					</div>
+				</section>
+			</div>	
+			
+</div>
+<div class="row">
+			<div class="col-sm-8 p-l-10 ">
+				<section>
+					<div class="text-right slider-container tb-none">
+						<div class="button-container">
+								<button class="button medium">Share</button>
+						</div>
+					</div>
+				</section>
+			</div>
 	</div>
-
+	</div>
+</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
