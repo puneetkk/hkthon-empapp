@@ -94,8 +94,6 @@ h1 {
   color: #FF6F69;
 }
 
-
-
 .page-wrap { padding-bottom: 80px; }
 
 .dashboard-widgets {
@@ -207,6 +205,41 @@ h1 {
 
       .dashboard-widgets .timeline-reviews .rating .fa-star-o { font-size: 25px; }
 
+.login-page {
+  background: url(dist/img/login-bg.jpg) no-repeat;
+  background-size: cover;
+  margin-bottom: 90px;
+}
+
+  .login-page .card {
+    padding: 40px 57px 40px 50px;
+    margin: 120px auto;
+    max-width: 340px;
+  }
+
+  .login-page h1 { 
+    font-weight: bold;
+    margin: 5px 0 20px 0; 
+  }
+
+  .login-page .form-control { 
+    border-radius: 0;
+    margin-top: 4px;
+    margin-bottom: 25px;
+  }
+
+  .login-page .btn {
+    margin-top: 13px;
+    padding: 7px 35px;
+  }
+
+  @media (min-width: 768px) {
+    .login-page .card { 
+      margin: 120px 23% 120px 48% ;
+      width: 340px;
+    }
+  }
+ 
 
 /*Retirement plan screen & slider css starts here*/
 	 .slider.slider-horizontal{width:100%;} 
