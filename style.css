@@ -27,15 +27,16 @@ body {
 }  
 
   .logo img { 
-    max-width: 226px;
+    max-width: 228px;
     width: 100%; 
   }  
 
 header .user {
   color: #29abe2;
-  margin-top: 24px;
   font-size: 24px;
+  margin-bottom: 20px;
 }
+
 header .user span {
   display: inline-block;
   border-radius: 50%;
@@ -54,9 +55,13 @@ header .user i {
 }
 header .exit {
   float: right;
-  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  header .user { margin: 24px 0 0 0; }
+  header .exit { margin: 30px 0 0 0; }
+}
 header .exit i { 
   color: #ff6f69;
   font-size: 35px;
@@ -65,15 +70,16 @@ header .exit i {
 nav {
   background: #ffebc7;
   color: #af5858;
-  padding: 12px 0;
+  padding: 12px 0 9px;
 }
 
   .breadcrumb {
     background: transparent;
     color: inherit;
+    font-size: 17px;
     line-height: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px 0;
     text-transform: uppercase;
   }
 
@@ -87,6 +93,10 @@ nav {
 
   .breadcrumb > .active { color: inherit; }
 
+@media (min-width: 768px) {
+  .breadcrumb { margin: 0 0 0 5px;  }
+}
+
 h1 {
   margin: 30px 20px 26px;
   font-size: 22px;
@@ -94,7 +104,10 @@ h1 {
   color: #FF6F69;
 }
 
-.page-wrap { padding-bottom: 80px; }
+.page-wrap { 
+  font-size: 18px;
+  padding-bottom: 80px; 
+}
 
 .dashboard-widgets {
 }
@@ -105,7 +118,6 @@ h1 {
     margin-top: 20px; 
     border: 1px solid #a08d8d;
     min-height: 290px;
-    font-size: 18px;
   }
 
     .dashboard-widgets section h3 {
@@ -134,7 +146,10 @@ h1 {
       .dashboard-widgets .current-plan .amount,
       .dashboard-widgets .current-plan .widget-label { line-height: 100%; } 
 
-      .dashboard-widgets .current-plan .btn { margin-top: 42px; } 
+      .dashboard-widgets .current-plan .btn { 
+        margin-top: 42px; 
+        padding: 7px 15px;
+      } 
 
   .dashboard-widgets .action-row { 
     border-bottom: 1px solid #d3d3d3;
@@ -151,7 +166,7 @@ h1 {
       box-shadow: none;
     }
 
-    .dashboard-widgets .action- p,
+    .dashboard-widgets .action-row p,
     .dashboard-widgets .timeline-row p { 
       color: #4d4d4d;
       font-size: 18px;
@@ -190,23 +205,27 @@ h1 {
           margin-bottom: 0
         }
       
-      .dashboard-widgets .timeline-reviews .rating,
-      .dashboard-widgets .timeline-reviews .likes {  
+      .rating,
+      .likes {  
         display: inline-block;
         color: #ff6f69; 
         padding-left: 0
       }
-      .dashboard-widgets .timeline-reviews .rating { padding-right: 25px; }
+      .rating { padding-right: 25px; }
 
-      .dashboard-widgets .timeline-reviews .rating li { 
+      .rating li { 
         display: inline-block;
         margin-right: 8px;
       }
 
-      .dashboard-widgets .timeline-reviews .rating .fa-star-o { font-size: 25px; }
+      .rating .fa-star-o { font-size: 25px; }
+
+@media (max-width: 768px) {
+  .dashboard-widgets .pension-pots-right { border: 0; }
+}
 
 .login-page {
-  background: url(dist/img/login-bg.jpg) no-repeat;
+  background: url(dist/img/login-bg.png) no-repeat;
   background-size: cover;
   margin-bottom: 90px;
 }
@@ -239,7 +258,51 @@ h1 {
       width: 340px;
     }
   }
- 
+
+.form-container {
+  background: #f2f2f2;
+  border: 1px solid #a08d8d;
+  padding: 35px 40px;
+}
+
+  .form-container .control-label { margin-top: 4px; }
+
+  .form-container .form-control {
+    background: #fff;
+    border: 1px solid #cecece;
+    border-radius: 0;
+    color: #666666;
+    font-size: 18px;
+  }
+
+  .form-container .form-control.datepicker { border-right: 0; }
+
+  .form-container .form-control.datepicker + .input-group-addon {
+    background: #fff;
+    border-radius: 0;
+  }
+
+  .form-container > form > .row {
+    padding: 5px 0 22px;
+  }
+  .form-container > form > .row:last-child {
+    padding-bottom: 12px;
+  }
+
+  .form-container-footer { color: #808080; }
+
+  .form-container-footer .rating {
+    margin-left: 25px;
+  }
+
+  .file-attachment { color: #999999; }
+
+    .file-attachment i { 
+      font-size:21px;
+      color: #808080; 
+    }
+
+    .file-attachment strong { padding: 0 6px 0 12px; }
 
 /*Retirement plan screen & slider css starts here*/
 	 .slider.slider-horizontal{width:100%;} 
