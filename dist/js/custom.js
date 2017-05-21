@@ -28,3 +28,7 @@ $( ".slider-example" ).each(function( index ) {
 	});
 
 });
+
+
+
+
