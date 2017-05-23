@@ -97,7 +97,7 @@
 										<td class="col-sm-2">{{ item.date }}</td>
 										<td class="col-sm-4">{{ item.description }}</td>
 										<td class="complete-color col-sm-2">
-											<span ng-hide="item.editing" ng-dblclick="editItem(item)" ng-class="{'complete-color': item.status === 'Completed', 'inprogress-color': item.status === 'In Progress','cancel-color': item.status === 'Cancelled', }">{{item.status}}</span>
+											<span ng-hide="item.editing" ng-dblclick="editItem(item)" ng-class="{'complete-color': (item.status | lowercase) == ('completed'| lowercase), 'inprogress-color': (item.status | lowercase) == ('in progress'| lowercase),'cancel-color': (item.status | lowercase) == ('cancelled'| lowercase), }">{{item.status}}</span>
 											<input ng-show="item.editing" ng-model="item.status" ng-blur="doneEditing(item)" autofocus />
 										</td>
 										<td class="col-sm-2"><button class="btn btn-small m-lr-3">{{ item.action }}</button></td>	
