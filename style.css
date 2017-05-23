@@ -120,7 +120,7 @@ h1 {
     min-height: 290px;
   }
 
-    .dashboard-widgets section h3 {
+    .dashboard-widgets section h3,.fundswitch-widgets section h3 {
       background: #a08d8d;
       color: #fff;
       margin: 0;
@@ -376,3 +376,57 @@ h1 {
 	
 	
 	 /*Retirement plan screen & slider css ends here*/
+	 /*Search My Actions screen css starts here*/
+	 #filtersubmit {
+		position: relative;
+		z-index: 1;
+		left: -25px;
+		top: 1px;
+		color: #7B7B7B;
+		cursor:pointer;
+		width: 0;
+	}
+	.search-box input.form-control {
+		border-radius:20px;
+		display:inline-block;
+		width:83.2%;
+	}
+	.search-box i.fa-search {
+		margin-left:-30px;
+	}
+	.table input[type="checkbox"]{
+		width: 20px;
+		height: 20px;
+		border: 1px solid #ddd;
+		background: transparent;}
+		
+
+		.table > thead > tr > th {
+			
+			border-bottom: 1px solid #dddddd;
+		
+		}
+		.table > tbody > tr:last-child{border-bottom: 1px solid #dddddd;}
+		.btn-small{ padding:7px 13px;text-transform:none;}
+		
+		table thead{border-top:1px solid #ac9b9b;}
+		.fundswitch-widgets table thead{border-top:none;}
+		.table-striped > tbody > tr:nth-of-type(odd) {
+			background-color: #f4f4f4;
+		}
+		.table-striped > tbody > tr:nth-of-type(even) {
+			background-color: #fff;
+		}
+		.complete-color{color:#39b54a;}
+		.inprogress-color{color:#f15a24;}
+		.fa-search:before {
+			color: #ccc;
+		}
+		  .fundswitch-widgets section { 
+			color: #af5858;
+			margin-top: 20px; 
+		}
+
+		
+		
+/*Search My Actions screen css ends here*/
