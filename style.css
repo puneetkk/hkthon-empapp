@@ -120,7 +120,7 @@ h1 {
     min-height: 290px;
   }
 
-    .dashboard-widgets section h3,.fundswitch-widgets section h3 {
+    .dashboard-widgets section h3,.fundswitch-widgets section h3, section.fundswitch-widgets  h3 {
       background: #a08d8d;
       color: #fff;
       margin: 0;
@@ -372,6 +372,10 @@ h1 {
 	.uppercase-trasfom{text-transform:uppercase;}
 	.bg-none{background:#fff!important;}
 	.tb-none{border-top:none;}
+	.redclr{color:red;}
+	.border-top-grey{border-top: 1px solid #a08d8d;}
+	.m-t-30 {  margin-top: 30px !important }
+	.m-l-132{margin-left: 132px;}
 	/*utility classes ends*/
 	
 	
@@ -410,7 +414,7 @@ h1 {
 		.btn-small{ padding:7px 13px;text-transform:none;}
 		
 		table thead{border-top:1px solid #ac9b9b;}
-		.fundswitch-widgets table thead{border-top:none;}
+		
 		.table-striped > tbody > tr:nth-of-type(odd) {
 			background-color: #f4f4f4;
 		}

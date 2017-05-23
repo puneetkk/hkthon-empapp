@@ -6507,11 +6507,12 @@ button.close {
   .p-l-sm-0 {  padding-left: 0px }
   .p-r-sm-0 {  padding-right: 0px }
   .m-t-sm-25 {  margin-top: 25px !important }
+  .p-t-sm-10 {  padding-top: 10px }
+  
 }
 
 @media (max-width: 992px) {
   .p-l-md-15 {  padding-left: 15px }
-
   .m-t-md-15 {  margin-top: 15px !important }
   .m-b-md-15 {  margin-bottom: 15px !important; }
 
