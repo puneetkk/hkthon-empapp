@@ -419,6 +419,7 @@ h1 {
 		}
 		.complete-color{color:#39b54a;}
 		.inprogress-color{color:#f15a24;}
+		.cancel-color{color:Orange;}
 		.fa-search:before {
 			color: #ccc;
 		}
@@ -427,6 +428,5 @@ h1 {
 			margin-top: 20px; 
 		}
 
-		
 		
 /*Search My Actions screen css ends here*/
