@@ -434,3 +434,78 @@ h1 {
 
 		
 /*Search My Actions screen css ends here*/
+
+
+.my-timeline {
+  border-top: 1px solid #cccccc;
+  padding: 20px;
+}
+  .my-timeline h3 {
+    color: #ff6f69;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 13px;
+    margin-bottom: 35px;
+  }
+        .my-timeline .red-badge {
+          background: #ff6f69;
+          color: #fff;
+          display: inline-block;
+          padding: 9px 18px 7px 12px;
+          text-transform: uppercase;
+          font-size: 15px;
+          margin-top: 6px;
+        }
+
+            .my-timeline .red-badge i { margin-right: 5px; }
+
+            .my-timeline .user-icon {
+              display: inline-block;
+              border-radius: 50%;
+              background: #ffcfab;
+              padding: 8px 3px;
+              height: 40px;
+              text-align: center;
+              width: 40px;
+              margin-right: 10px;
+              float: left;
+            }
+
+              .my-timeline .user-icon i { 
+                color: #fff;
+                font-size: 20px;
+              }
+
+            .my-timeline .user-icon + span { 
+                color: #914a4a
+            }
+
+            .my-timeline .user-icon + span time { 
+              display: block; 
+              font-size: 15px;
+            }
+        .my-timeline .comments-row { margin-bottom: 8px }
+
+        .my-timeline .comments {
+          font-size: 16px;    
+          border-bottom: 1px solid #cccccc; 
+          padding-bottom: 15px;
+        }
+            .my-timeline .comments strong { 
+              display: block; 
+              margin-bottom: 15px;
+            }
+
+        .my-timeline .comments-row:last-child .comments { 
+          padding-bottom: 5px;
+          border-bottom: 0;
+        }
+
+        .my-timeline .comment-form {   
+          border-top: 1px solid #cccccc; 
+          padding-top: 20px;
+        }
+
+        .my-timeline .comment-form h3 { margin-bottom: 25px; }
+
+        .my-timeline .form-control { border-radius: 0 }
