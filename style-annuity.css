@@ -1,0 +1,12 @@
+/* Custom Styles */
+
+	.anuity-box input.form-control {
+		
+		display:inline-block;
+		width:20%;
+	}
+	.anuity-box i.fa-search {
+		margin-left:-10px;
+	}
+	.pension-pot{}
+
