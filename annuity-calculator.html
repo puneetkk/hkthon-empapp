@@ -79,7 +79,7 @@
 								</div>
 								<div class="col-sm-8 col-md-6 p-l-0 p-r-60 p-r-sm-0">
 									<div class="anuity-box">
-									  <input type="text" class="form-control current-age" />
+									  <input type="number" class="form-control current-age" />
 										
 									</div> 
 
@@ -103,7 +103,7 @@
 								</div>
 								<div class="col-sm-8 col-md-6 p-l-0 p-r-60 p-r-sm-0">
 									<div class="anuity-box">
-									  <input type="text" class="form-control pension-age" />
+									  <input type="number" class="form-control pension-age" />
 										
 									</div> 
 
@@ -126,6 +126,7 @@
 									<div class="row">
 										<div class="col-xs-12 text-center m-t-sm-25 m-t-30 p-t-30 border-top-grey">
 											<button type="button" class="btn m-lr-3 btn-cal">Calculate</button>
+											<button type="button" class="btn m-lr-3 btn-reset">Reset</button>
 											
 										</div>
 									</div>
@@ -151,35 +152,97 @@
 	//$('.month-sal').val();//($('.month-sal').val()!='undefined') ? $('.month-sal').val() : 200;
 	//Variable declarations
 	//console.log("hello: "+$('.month-sal').val());
-	var monthSal=100;
-	var currentAge=30;
+	var monthSal=0;
+	var currentAge=37;
 	var salHike=5;
-	var pensionAge=50;
-	var empContri=5;
-	var emplyrContri=5;
-	var stateContri=5;
+	var pensionAge=65;
+	var empContri=4;
+	var emplyrContri=3;
+	var stateContri=1;
 	var currentTotalContri=0;
-	var prevTotalCumContri=0;
-	var currentTotalCumContri;
+	var prevTotalCumContri=69679;
+	var currentTotalCumContri=0;
+	var prevYrMonthlySal=0;
+	var annuityYrs=0;
 	//$('.month-sal').val()
 		$(".btn-cal").click(function(){
-			monthSal=parseInt($('.month-sal').val());
+		
+			//Reset input values first
+			//$('.current-age').val("");
+			//$('.pension-age').val("");
+			//$('.month-sal').val("");
 			
-			for (i = 0; i < 2; i++) {
+			currentAge=parseFloat($('.current-age').val());
+			pensionAge=parseFloat($('.pension-age').val());
+			monthSal=parseFloat($('.month-sal').val());
+			annuityYrs=parseInt(pensionAge-currentAge);
+			console.log("current Age: "+currentAge);
+			console.log("current age monthly Salary: "+monthSal);
+			console.log("pension  Age: "+pensionAge);
+			console.log("Calculate Annuity for next: "+annuityYrs+" Years");
+			for (i = 0; i < (pensionAge-currentAge); i++) {
 				
-				monthSal+=monthSal+monthSal*(salHike/100);
-				console.log(i+" monthSal: "+monthSal);
-				currentTotalContri+= (monthSal*empContri/100)+(monthSal*emplyrContri/100)+(monthSal*stateContri/100);
-				console.log(i+" currentTotalContri: "+currentTotalContri);
-				currentTotalCumContri=prevTotalCumContri+currentTotalContri;
-				console.log(i+" currentTotalCumContri: "+currentTotalCumContri);
-				prevTotalCumContri=currentTotalContri;
-				console.log(i+" prevTotalCumContri: "+prevTotalCumContri);
-			
+				if(i==0){
+					console.log(i+" current age monthly Salary: "+monthSal);
+					prevYrMonthlySal=monthSal;
+					console.log(i+" current age employee Contribution:"+empContri+'%= '+(monthSal*empContri/100));
+					console.log(i+" current age employer Contribution:"+emplyrContri+'%= '+(monthSal*emplyrContri/100));
+					console.log(i+" current age state contribution:"+stateContri+'%= '+(monthSal*stateContri/100));
+					currentTotalContri= parseFloat((monthSal*empContri/100)+(monthSal*emplyrContri/100)+(monthSal*stateContri/100));
+					console.log(i+" current age Year Total Contribution: "+currentTotalContri);
+					console.log(i+" previous Total Cummulative Contribution: "+prevTotalCumContri);
+					currentTotalCumContri=prevTotalCumContri+currentTotalContri;
+					console.log(i+" current age Year TotalCumulative Contribution: "+currentTotalCumContri);
+				}else{
+					prevTotalCumContri=currentTotalContri;
+
+					console.log(i+" previous year monthly salary: "+prevYrMonthlySal);
+					console.log(i+" next year hike: "+salHike+'%= '+monthSal*(salHike/100));
+					
+					monthSal+=parseFloat(monthSal*(salHike/100));
+					console.log(i+" next year monthly salary: "+monthSal);
+					//monthSal+=parseFloat(monthSal)*(salHike/100);
+					console.log(i+" next year employee Contribution:"+empContri+'%= '+(monthSal*empContri/100));
+					console.log(i+" next year employer Contribution:"+emplyrContri+'%= '+(monthSal*emplyrContri/100));
+					console.log(i+" next year state contribution:"+stateContri+'%= '+(monthSal*stateContri/100));
+					currentTotalContri= parseFloat((monthSal*empContri/100)+(monthSal*emplyrContri/100)+(monthSal*stateContri/100));
+					
+					console.log(i+" next Year Total Contribution: "+currentTotalContri);
+					console.log(i+" previous Year TotalCumulative Contribution: "+prevTotalCumContri);					
+					currentTotalCumContri=prevTotalCumContri+currentTotalContri;
+					console.log(i+" next year Total cumulative Contribution: (current+ previous)  "+currentTotalCumContri);
+					console.log("*****************************");
+				}
+
+
 		}
-		console.log("monthSal: "+monthSal+" currentTotalContri: "+currentTotalContri+" currentTotalCumContri: "+currentTotalCumContri+" prevTotalCumContri: "+prevTotalCumContri);
+		console.log("Pension Age calculations as below:");
+		console.log("pension age monthly Salary: "+monthSal+" pension age Total Contribution: "+currentTotalContri+" pension age Total Cumulative Contribution: "+currentTotalCumContri);
+		console.log("*****************************");
 		});
-		//(pensionAge-currentAge);
+		//Reset Form
+		$(".btn-reset").click(function(){
+		
+			 monthSal=0;
+			 currentAge=37;
+			 salHike=5;
+			 pensionAge=65;
+			 empContri=5;
+			 emplyrContri=5;
+			 stateContri=5;
+			 currentTotalContri=0;
+			 prevTotalCumContri=0;
+			 currentTotalCumContri=0;
+			 prevYrMonthlySal=0;
+			 annuityYrs=0;
+			 
+			 //
+			 
+			$('.current-age').val("");
+			$('.pension-age').val("");
+			$('.month-sal').val("");
+		
+		});
 
 
 }());
