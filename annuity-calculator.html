@@ -166,14 +166,15 @@
 			monthSal=parseInt($('.month-sal').val());
 			
 			for (i = 0; i < 2; i++) {
+				
 				monthSal+=monthSal+monthSal*(salHike/100);
-				console.log("monthSal: "+monthSal);
+				console.log(i+" monthSal: "+monthSal);
 				currentTotalContri+= (monthSal*empContri/100)+(monthSal*emplyrContri/100)+(monthSal*stateContri/100);
-				console.log("currentTotalContri: "+currentTotalContri);
+				console.log(i+" currentTotalContri: "+currentTotalContri);
 				currentTotalCumContri=prevTotalCumContri+currentTotalContri;
-				console.log("currentTotalCumContri: "+currentTotalCumContri);
+				console.log(i+" currentTotalCumContri: "+currentTotalCumContri);
 				prevTotalCumContri=currentTotalContri;
-				console.log("prevTotalCumContri: "+prevTotalCumContri);
+				console.log(i+" prevTotalCumContri: "+prevTotalCumContri);
 			
 		}
 		console.log("monthSal: "+monthSal+" currentTotalContri: "+currentTotalContri+" currentTotalCumContri: "+currentTotalCumContri+" prevTotalCumContri: "+prevTotalCumContri);
