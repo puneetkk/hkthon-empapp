@@ -509,3 +509,50 @@ h1 {
         .my-timeline .comment-form h3 { margin-bottom: 25px; }
 
         .my-timeline .form-control { border-radius: 0 }
+
+		/*Pensiondetails page starts here*/
+		
+		h3 span strong{text-transform:lowercase!important;}
+		.m-r-100{margin-right:100px;}
+		.m-20{margin:20px;}
+		.p-l-20{padding-left:20px;}
+		.p-r-20{padding-right:20px;}
+		.m-t-20{margin-top:20px;}
+		.m-r-20{margin-right:20px;}
+		.p-t-0{padding-top:0;}
+		.font-16 { font-size: 16px; }
+		.min-height-120{min-height:120px!important;}
+		.min-height-145{min-height:145px!important;}
+		.txt-transform-none{text-transform:none;}
+		.border-none{border:none!important;}
+		@media (max-width: 767px) {
+		  .m-r-sm-30 {  margin-right: 30px }
+
+		}
+		.pension-widgets section{
+			
+			/*color: #af5858;
+			background: #f2f2f2;
+			margin-top: 20px; 
+			border: 1px solid #a08d8d;*/
+			min-height: 150px;
+			border:none;
+		}
+		.dashboard-widgets .pension-details{
+			
+				background-color:#ffe2a9;
+				    margin-top: 20px;
+				
+		}
+		.vertical-align {
+		  display: flex;
+		  flex-direction: row;
+		}
+		.status-check{
+			color: #088ab7;
+			font-size: 18px;
+			font-weight:bold;
+			text-transform:uppercase;
+		}
+		
+		/*Pensiondetails page ends here*/
