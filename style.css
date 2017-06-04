@@ -306,11 +306,11 @@ h1 {
 
 /*Retirement plan screen & slider css starts here*/
 	 .slider.slider-horizontal{width:100%;} 
-	.slider.slider-horizontal .slider-track{height:15px;width:102%;}
-	.slider.slider-horizontal .slider-tick-label-container .slider-tick-label{ margin-top: 20px;font-size:12px;}
-	.slider.slider-horizontal .slider-tick{width:3px;margin-left: 5px;margin-top:25px; }
-	.slider.slider-horizontal .slider-handle{width: 31px; height:32px;background:url(dist/img/slider-tip.png) no-repeat; margin-top: -5px;}
-	
+	.slider.slider-horizontal .slider-track{height:20px;width:100.5%;}
+	.slider.slider-horizontal .slider-tick-label-container .slider-tick-label{ margin-top: 20px;font-size:1.4rem; color: #929497; font-weight: bold;}
+	.slider.slider-horizontal .slider-tick{width:3px;margin-left: 0px;margin-top:28px; }
+	.slider.slider-horizontal .slider-handle{width: 3.2rem; height:3.2rem;background:url(dist/img/slider-tip.png) no-repeat; margin-top: -3px;}
+	.slider-selection{border-radius:15px;}
 	.tooltip-inner{background-color:#DAA520;}
 	
 	.tooltip.top .tooltip-arrow {
@@ -330,7 +330,7 @@ h1 {
 		border-radius: 50%;
 		background-color: #a9a9a9;
 	}
-	.slider-container{padding:15px 15px 0px 15px; margin-top:10px;border-top: 1px solid #c0c0c0;}
+	.slider-container{padding:15px 15px 0px 15px; margin-top:10px;border-top: 1px solid #c0c0c0; width:82.5%;}
 
 	.slider-container label{display:block; color:#a9a9a9; padding-bottom: 25px;}
 	.slider-container{margin-top:15px;}
