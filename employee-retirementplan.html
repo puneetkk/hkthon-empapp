@@ -61,54 +61,59 @@
    <h1>My Retirement Plan</h1>
 <div class="container">
     <div class="row page-wrap">
+		
 		<div class="slider-widgets">
-			<div class="p-r-10 ">
-				<section>
-					<div class='slider-container center-block age-slider'>
-							<label>CURRENT AGE:</label>
-							<input id="slider1" type="text" data-slider-ticks="[20, 25, 30, 35, 40,45,50,55,60,65]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["20", "25", "30", "35", "40","45", "50", "55", "60","65"]'>
-					</div>
-				</section>
-				
-			</div>
-			<div class="p-l-10 ">
-				<section>
-					<div class="slider-container input-wrapper center-block">
-						<label class="p-b-0"> MONTHLY SALARY</label>
-						<span>$ <input type="number" class="form-control salary-input month-sal" value=""></span>
-					</div>
-					
-				</section>
-			</div>
-			<div class="p-l-10 ">
-				<section>
-					<div class='slider-container center-block pension-slider'>
-						<label>PENSION AGE</label>
-						<input id="slider2" type="text" data-slider-ticks="[20, 25, 30, 35, 40,45,50,55,60,65]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["20", "25", "30", "35", "40","45", "50", "55", "60","65"]'>
-					
-					</div>
-				</section>
-			</div>	
-			<div class="p-l-10 ">
-				<section>
-					<div class='slider-container center-block annuity-slider'>
-						<label>TARGET PENSION POT - MONTHLY</label>
-						<input id="slider3" type="text" data-slider-ticks="[1000,2000,3000,4000,5000,6000,7000,8000,9000,10000]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["1000","2000","3000","4000","5000","6000","7000","8000","9000","10000"]'>
-					
-					</div>
-				</section>
-			</div>	
-			<div class="p-l-10 ">
-				<section>
-					<div class="text-center slider-container center-block">
-						<div class="button-container">
-								<button class="button medium selected btn-cal">Calculate</button>
-								<button class="button medium btn-reset">Reset</button>
+			<form id="retirementplan" method="post" action="">
+				<div class="p-r-10 ">
+					<section>
+						<div class='slider-container center-block'>
+								<label>CURRENT AGE:</label>
+								<input id="age-slider" type="text" data-slider-ticks="[20, 25, 30, 35, 40,45,50,55,60,65]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["20", "25", "30", "35", "40","45", "50", "55", "60","65"]'>
 						</div>
-					</div>
-				</section>
-			</div>
+					</section>
+					
+				</div>
+				<div class="p-l-10 ">
+					<section>
+						<div class="slider-container input-wrapper center-block">
+							<label class="p-b-0"> MONTHLY SALARY</label>
+							<span>$ <input type="number" class="form-control salary-input month-sal" id ="retirementplan_salary" value="" name="salary"></span>
+							<span class="error">This field is required</span>
+						</div>
+						
+					</section>
+				</div>
+				<div class="p-l-10 ">
+					<section>
+						<div class='slider-container center-block'>
+							<label>PENSION AGE</label>
+							<input id="pension-slider" type="text" data-slider-ticks="[20, 25, 30, 35, 40,45,50,55,60,65]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["20", "25", "30", "35", "40","45", "50", "55", "60","65"]'>
+							<span class="error">Pension age should be greater than current age.</span>
+						</div>
+					</section>
+				</div>	
+				<div class="p-l-10 ">
+					<section>
+						<div class='slider-container center-block'>
+							<label>TARGET PENSION POT - MONTHLY</label>
+							<input id="annuity-slider" type="text" data-slider-ticks="[1000,3000,5000,7000,9000,11000,13000,15000,17000,19000,21000,23000,25000]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["1000","3000","5000","7000","9000","11000","13000","15000","17000","19000","21000","23000","25000"]'>
+						
+						</div>
+					</section>
+				</div>	
+				<div class="p-l-10 ">
+					<section>
+						<div class="text-center slider-container center-block">
+							<div class="button-container">
+									<button type="submit" class="button medium selected btn-cal">Calculate</button>
+									<button class="button medium btn-reset">Reset</button>
+							</div>
+						</div>
+					</section>
+				</div>
+			</form>
 		</div>
+		
 		<div class="p-l-10 p-20 p-b-0 ">
 			<div class="dashboard-widgets">
 				<section class="result-section bg-none border-none">
@@ -120,7 +125,7 @@
 								</div>
 								<div class="col-sm-4 pension-pots-right">
 									<div class="widget-label font-20 p-b-5"></div>
-									<div class="amount font-28"><span class="extrabold pension-pot">$2,561*</span></div> 
+									<div class="amount font-28"><span class="extrabold pension-pot">$0*</span></div> 
 									<div>
 										<strong>per month</strong> Estimated monthly income including STate Pension
 									</div>

@@ -386,6 +386,28 @@ h1 {
 
 	button.selected{background-color: #A08D8D; color:#fff;}
 	button.medium{width:128px;}
+	
+	
+		.error{
+			display: none;
+			margin-left: 10px;
+			font-size:14px;
+		}		
+		
+		.error_show{
+			color: red;
+			margin-left: 10px;
+			font-size:14px;
+		}
+		
+		input.invalid{
+			border: 1px solid red;
+		}
+		
+		input.valid{
+			/*border: 2px solid green;*/
+		}
+	
 	/*utility classes starts*/
 	.p-b-0 {  padding-bottom: 0px!important;}
 	.m-0-auto{margin:0 auto;}
@@ -554,10 +576,6 @@ h1 {
 		}
 		.pension-widgets section{
 			
-			/*color: #af5858;
-			background: #f2f2f2;
-			margin-top: 20px; 
-			border: 1px solid #a08d8d;*/
 			min-height: 150px;
 			border:none;
 		}
