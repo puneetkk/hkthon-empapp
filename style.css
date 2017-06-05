@@ -311,7 +311,7 @@ h1 {
 	.slider.slider-horizontal .slider-tick{width:3px;margin-left: 0px;margin-top:28px; }
 	.slider.slider-horizontal .slider-handle{width: 3.2rem; height:3.2rem;background:url(dist/img/slider-tip.png) no-repeat; margin-top: -3px;}
 	.slider-selection{border-radius:15px;}
-	.tooltip-inner{background-color:#DAA520;}
+	.tooltip-inner{background-color:#DAA520; border-radius:15px;}
 	
 	.tooltip.top .tooltip-arrow {
 			border-top-color: #daa520;
@@ -330,10 +330,11 @@ h1 {
 		border-radius: 50%;
 		background-color: #a9a9a9;
 	}
-	.slider-container{padding:15px 15px 0px 15px; margin-top:10px;border-top: 1px solid #c0c0c0; width:82.5%;}
-
+	.slider-container{padding:15px 15px 0px 15px; margin-top:15px;border-top: 1px solid #c0c0c0; width:82.5%;}
 	.slider-container label{display:block; color:#a9a9a9; padding-bottom: 25px;}
-	.slider-container{margin-top:15px;}
+	.result-section .slider-container {border: 1px solid #c0c0c0;}
+
+	
 	input{
 		border: 1px solid #a9a9a9;
 		border-radius: 5px;
@@ -344,7 +345,7 @@ h1 {
 	}
 
 	
-	.salary-input{width:100px;color:#696969; font-weight:bold;}
+	.salary-input{width:100px;color:#696969; font-weight:bold;display: inline-block;}
 	
 	
 	
@@ -363,6 +364,25 @@ h1 {
 		text-transform:uppercase;
 		background-color:#fff;
 }
+		span.square{
+			width:20px;
+			height:20px;
+			border:1px solid #c0c0c0;
+			display: inline-block;
+			margin-right: 10px
+			
+		}
+		span.square-label{top: -5px;position: relative;}
+		.graph-indicator{
+			font-size: 15px;
+			display: inline-block;
+			margin-right: 20px;
+
+		}
+		.square-orange{background:#F9B9B9;}
+		.square-pink{background:#F29FBD;}
+		.square-blue{background:#B2CDDE;}
+		.square-yellow{background:#F7C483;}
 
 	button.selected{background-color: #A08D8D; color:#fff;}
 	button.medium{width:128px;}
@@ -376,6 +396,9 @@ h1 {
 	.border-top-grey{border-top: 1px solid #a08d8d;}
 	.m-t-30 {  margin-top: 30px !important }
 	.m-l-132{margin-left: 132px;}
+	.p-b-30 {  padding-bottom: 30px }
+	.p-l-0 {  padding-left: 0px!important }
+	.m-t-10{margin-top:10px;}
 	/*utility classes ends*/
 	
 	
